@@ -3,9 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weare CGS Site</title>
+    <title>Creative Games Studio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('nav ul');
+            menu.classList.toggle('active');
+        }
+    </script>
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <img src="image/logo.png" alt="Creative Games Studio"> <!-- Placeholder for logo -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Store</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>DANTE: Inferno</h1>
+        <p>Explore the nine circles of Inferno through a deep, branching storyline, and face legendary foes in cinematic boss fights.</p>
+        <a href="#">Follow Now</a>
+    </div>
+
+    <div class="games">
+        <div class="game">
+            <img src="image/Arkhanos.png" alt="Arkhanos">
+        </div>
+        <div class="game">
+            <img src="image/chronicles-of-drunagor.png" alt="Chronicles of Drunagor">
+        </div>
+        <div class="game">
+            <img src="image/Dante.png" alt="Dante">
+        </div>
+    </div>
+    <div class="tittle-new">
+        <h2>WHAT'S NEW?</h2>
+    </div>
     
-</body>
-</html>
+    <div class="whats-new">
+       <h2>Essen SPIEL 2023 Highlights</h2>
+       <span>Check out Highlights from the CGS booth! There is full gallery...</span>
+    </div>
+
+    <div class="newsletter">
+        <h3>DON'T MISS ANY NEWS</h3>
+        <p>Subscribe to the CGS Newsletter and stay updated with the latest information about our past and upcoming crowdfunding campaigns, game releases, and other news from our studio.</p>
+        <form action="#">
+            <input type="email" placeholder="Your email address">
+            <input type="submit" value="Subscribe">
+        </form>
+    </div>
+
+    <footer>
+        <div>Billings, MT - USA</div>
+        <div class="info">
+            <a href="#">Cookie Policy</a> | 
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms and conditions</a>
+        </div>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">YouTube</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        <div>&copy; All rights reserved @ Creative Games Studio LLC</div

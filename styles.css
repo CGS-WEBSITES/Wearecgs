@@ -1,0 +1,217 @@
+
+        @font-face {
+            font-family: 'Futura Md BT';
+            src: url('caminho/para/futura-md-bt.woff2') format('woff2'),
+                 url('caminho/para/futura-md-bt.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Futura Md BT', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            padding: 5px 0; /* Reduzir o padding para diminuir a altura */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center; /* Alinhar verticalmente */
+            justify-content: space-between; /* Espaçar logo e menu */
+        }
+
+        .logo {
+            margin-left: 20px;
+        }
+
+        nav {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 25px;
+            cursor: pointer;
+            margin-right: 20px;
+        }
+
+        .menu-toggle span {
+            height: 3px;
+            background: white;
+            border-radius: 3px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px; /* Espaço entre os links */
+            font-size: 16px;
+            transition: color 0.3s;
+            display: inline-block;
+            padding: 10px 0; /* Espaçamento interno para melhorar o clique */
+        }
+
+        nav a:hover {
+            color: #aaa;
+        }
+
+        /* Estilo para mobile */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #1a1a1a;
+                position: absolute;
+                top: 60px; /* Ajustar de acordo com a altura do header */
+                right: 0;
+                z-index: 1000;
+            }
+
+            nav ul li {
+                text-align: center;
+            }
+
+            nav ul li a {
+                padding: 10px 0;
+                margin: 0;
+                border-bottom: 1px solid #333;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+        }
+
+        .hero {
+            background-image: url('image/bg_home.png'); /* Placeholder for background image */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            position: relative;
+            color: white;
+            text-align: center;
+            padding-top: 150px;
+            margin-top: 60px; /* Ajuste para compensar o menu fixo */
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero a {
+            color: white;
+            background-color: green;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .games {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .game {
+            margin: 0 10px;
+        }
+
+        .game img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .tittle-new h2 {
+            margin-top: 50px;
+        }
+
+        .whats-new {
+            background-image: url('image/whats-new.webp'); /* Placeholder for background image */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            position: relative;
+            color: white;
+            text-align: center;
+            padding-top: 150px;
+        }
+
+        .whats-new h2 {
+            margin-top: 250px;
+            margin-right: 1000px;
+        }
+
+        .whats-new span {
+            margin-top: 250px;
+            margin-right: 880px;
+        }
+
+        .newsletter {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .newsletter input[type="email"] {
+            padding: 10px;
+            width: 60%;
+            max-width: 300px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .newsletter input[type="submit"] {
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer .social-media a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+   
