@@ -246,38 +246,168 @@
 
         .newsletter {
             background-color: #f4f4f4;
-            padding: 20px;
-            text-align: center;
+            padding: 40px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-
+        
+        .newsletter-content {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            max-width: 1200px;
+            width: 100%;
+        }
+        
+        .newsletter-icon {
+            width: 150px;
+            height: auto;
+            margin-right: 30px;
+        }
+        
+        .newsletter-text {
+            text-align: left;
+            max-width: 600px;
+            margin-right: 20px;
+        }
+        
+        .newsletter-text h3 {
+            font-size: 24px;
+            margin: 0;
+            font-weight: bold;
+        }
+        
+        .newsletter-text p {
+            font-size: 16px;
+            margin: 5px 0 0;
+        }
+        
+        .newsletter form {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: nowrap;
+            width: 100%;
+        }
+        
         .newsletter input[type="email"] {
             padding: 10px;
-            width: 60%;
-            max-width: 300px;
-            margin: 10px 0;
-            border-radius: 5px;
+            width: 300px;
             border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-size: 16px;
+            box-sizing: border-box;
         }
-
+        
         .newsletter input[type="submit"] {
             padding: 10px 20px;
-            background-color: green;
+            background-color: #5cb85c;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 16px;
         }
+        
+        .newsletter input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+        
+        
 
         footer {
-            background-color: #1a1a1a;
+            background-color: #000;
             color: white;
-            text-align: center;
+            padding: 20px 0;
+        }
+        
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
         }
-
-        footer .social-media a {
+        
+        .footer-logo img {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+        
+        .footer-logo p {
+            margin: 0;
+            font-size: 14px;
+        }
+        
+        .footer-info, .footer-social {
+            text-align: left;
+        }
+        
+        .footer-info h4, .footer-social h4 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .footer-info ul, .footer-social ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .footer-info ul li, .footer-social ul li {
+            margin-bottom: 5px;
+        }
+        
+        .footer-info ul li a, .footer-social ul li a {
             color: white;
             text-decoration: none;
-            margin: 0 10px;
+            font-size: 14px;
+            transition: color 0.3s;
         }
+        
+        .footer-info ul li a:hover, .footer-social ul li a:hover {
+            color: #aaa;
+        }
+        
+        .footer-social ul {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .footer-social ul li a {
+            font-size: 20px;
+        }
+        
+        .contact-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #5cb85c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        
+        .contact-button:hover {
+            background-color: #4cae4c;
+        }
+        
+        .footer-bottom {
+            background-color: #5cb85c;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            color: white;
+        }
+        
+        .footer-bottom p {
+            margin: 0;
+        }
+        
    
