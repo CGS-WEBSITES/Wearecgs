@@ -59,11 +59,71 @@
     <div class="tittle-new">
         <h2>WHAT'S NEW?</h2>
     </div>
-    
-    <div class="whats-new">
-       <h2>Essen SPIEL 2023 Highlights</h2>
-       <span>Check out Highlights from the CGS booth! There is full gallery...</span>
+    <div class="whats-new carousel-container">
+        <div class="carousel">
+            <div class="carousel-slide">
+                <img src="image/whats-new.webp" alt="Highlight 1">
+                <div class="carousel-content">
+                    <h2>Essen SPIEL 2023 Highlights</h2>
+                    <p>Check out the highlights from the CGS booth! There is a full gallery...</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="image/news2.webp" alt="Highlight 2">
+                <div class="carousel-content">
+                    <h2></h2>
+                    <p></p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="image/news3.webp" alt="Highlight 3">
+                <div class="carousel-content">
+                    <h2></h2>
+                    <p></p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-prev">&#10094;</button>
+        <button class="carousel-next">&#10095;</button>
     </div>
+    
+    <script>
+     function toggleMenu() {
+    const navUl = document.querySelector('nav ul');
+    navUl.classList.toggle('active');
+}
+
+document.querySelector('.menu-toggle').addEventListener('click', toggleMenu);
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+    const carousel = document.querySelector('.whats-new .carousel');
+    const slides = document.querySelectorAll('.whats-new .carousel-slide');
+    const prevButton = document.querySelector('.whats-new .carousel-prev');
+    const nextButton = document.querySelector('.whats-new .carousel-next');
+
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        const slideWidth = slides[0].clientWidth;
+        carousel.style.transform = `translateX(${-index * slideWidth}px)`;
+    }
+
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    });
+
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+    });
+});
+
+    </script>
 
     <div class="newsletter">
         <div class="newsletter-content">
